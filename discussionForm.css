@@ -3,39 +3,65 @@
 body{
     font-family: 'Kalam', cursive;
 }
-
 h1{
-    display: inline-block;
     font-size: 30px;
-    margin-top: 0px;
-    margin-bottom: -15px;
     padding-left: 10px;
+    margin-top: 0px;
+    margin-bottom: -10px;
 }
 
-p{
+span{
     font-size: 15px;
-    line-height: 0px;
     padding-left: 10px;
 }
 
 .discussion {
     display: flex;
+    flex-direction: column;
     width: 800px;
     height: 600px;
-    border: 2px solid black;    
-    flex-direction: column;
+    border: 2px solid black; 
     overflow: auto;
 }
 
 .topic{   
+    display: flex;
+    justify-content: space-between;
     width: 800px;
     height: 68px;
     border-bottom: 2px solid black;
 }
 
-input {
+.button {
+    align-items: flex-start;
+    margin-right: 10px;
+}
+
+input[type="button"] {
     border: none;
-    background: none;
     font-weight: 900;
     font-size: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+input[type="button"]:active {
+    vertical-align: middle;
+    color: #01a715;
+}
+
+.f {
+    display: flex;
+}
+
+.time {
+    background-color: yellowgreen;
+    width: 100px;
+    height: 100px;
+}
+
+.message {
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
 }
