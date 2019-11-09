@@ -12,14 +12,14 @@ h1{
 
 span{
     font-size: 15px;
-    padding-left: 10px;
+    margin-left: 10px;
 }
 
-.discussion {
+.form {
     display: flex;
     flex-direction: column;
-    width: 800px;
-    height: 600px;
+    width: 796px;
+    height: 596px;
     border: 2px solid black; 
     overflow: auto;
 }
@@ -39,6 +39,7 @@ span{
 
 input[type="button"] {
     border: none;
+    background: none;
     font-weight: 900;
     font-size: 20px;
     outline: none;
@@ -47,21 +48,50 @@ input[type="button"] {
 
 input[type="button"]:active {
     vertical-align: middle;
-    color: #01a715;
+    color: white;
 }
 
-.f {
+.discussion {
     display: flex;
+    margin: 15px 20px 15px 20px;
 }
 
 .time {
-    background-color: yellowgreen;
-    width: 100px;
-    height: 100px;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid;
+    width: 150px;
+    padding-right: 15px;
 }
 
-.message {
-    background-color: aqua;
-    width: 100px;
-    height: 100px;
+.element {
+    display: flex;
 }
+
+.element.message {
+    flex-direction: column;
+    padding-left: 15px;
+}
+
+.initials{
+    display: flex;
+    border: 2px solid black;
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    margin: 0px;
+    border: 2px solid black;
+}
+
+
+
+
+
+
+
+
